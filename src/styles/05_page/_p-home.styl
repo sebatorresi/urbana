@@ -318,6 +318,7 @@
       z-index -2
 
   .efem__description
+    font-weight 700
     line-height 1.5
     padding 3rem 0 0 40%
 
@@ -339,7 +340,16 @@
   header
     h1
       &:before, &:after
-        background $color__twiter
+        background $color__twitter
+
+  p
+    line-height 1.5
+    margin-bottom 3rem
+    padding 0 5rem
+
+    a
+      color $color__twitter
+      font-weight 700
 
 .ig
   grid-column 1 / -1
