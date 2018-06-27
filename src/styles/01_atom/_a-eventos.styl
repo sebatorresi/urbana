@@ -1,0 +1,64 @@
+.slider__evento
+  .show
+    background #9e8976
+    margin-bottom 2rem
+    padding 1rem
+    position relative
+
+    &:before
+      background url('../img/tata/textura.png') fixed repeat 0 0
+      content ''
+      height 100%
+      left 0
+      position absolute
+      right 0
+      top 0
+      width 100%
+      z-index 5
+
+    .evento--titulo, .evento--fecha, .evento--lugar, .evento--coste, .evento--hora
+      align-self center
+      background-size 100%
+      display block
+      overflow hidden
+      text-indent -2000%
+
+    .evento--titulo
+      background url('../img/tata/logo-tata.png') no-repeat 0 0
+      height 183px
+      width 100px
+
+    .evento--info
+      align-items center
+      display flex
+      flex-flow row wrap
+      justify-content space-around
+      margin-top 2rem
+      width 100%
+
+      .evento--fecha
+        background url('../img/tata/fecha.png') no-repeat 0 0
+        height 47px
+        margin-right 1.5rem
+        transform rotate(7deg)
+        width 125px
+
+      .evento--lugar
+        background url('../img/tata/lugar.png') no-repeat 0 0
+        height 69px
+        transform rotate(-7deg)
+        width 125px
+
+      .evento--coste
+        background url('../img/tata/precio.png') no-repeat 0 0
+        height 61px
+        margin-top 1.5rem
+        transform rotate(9 -deg)
+        width 125px
+
+      .evento--hora
+        background url('../img/tata/hora.png') no-repeat 0 0
+        height 62px
+        margin-top 1.5rem
+        transform rotate(-9 -deg)
+        width 125px

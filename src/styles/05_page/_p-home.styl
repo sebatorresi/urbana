@@ -1,0 +1,350 @@
+.latest__posts
+  .posts
+    display grid
+    grid-column-gap $gap__small
+    grid-template-columns repeat(3, 1fr)
+
+    .post
+      display flex
+      flex-flow column wrap
+
+      &:nth-child(2)
+        .post__cat
+          order 2
+
+        .post__date
+          order 4
+
+        .post__title
+          order 3
+
+        .post__description
+          order 4
+
+        .post__img
+          margin-bottom 2vh
+          order 1
+
+  header
+    h1
+      &:before, &:after
+        background $color__catOne
+
+.urbana__bits
+  display grid
+  grid-gap $gap__small
+  grid-template-columns 55vw 1fr
+  position relative
+
+  .cat, .title, .description
+    a, p
+      &::selection
+        background $color__catTwo
+        color white
+        text-shadow none
+
+  .cat
+    a
+      box-shadow 0 -1px 0 0 white inset, 0 -2px 0 0 white inset, 0 -4px 0 0 transparent inset
+      color $black
+      // text-shadow 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white, 2px -2px 0 white, 2px -1px 0 white, 2px 0 0 white, -2px -2px 0 white, -2px -1px 0 white, -2px 0 0 white, 1px -2px 0 white, 1px -1px 0 white, 1px 0 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0 0 white, 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white
+      transition all .3s ease-in-out
+
+      &:hover, &:focus
+        box-shadow 0 -1px 0 0 white inset, 0 -2px 0 0 white inset, 0 -5px 0 0 $color__catTwo inset
+
+  .title
+    a
+      box-shadow 0 -1px 0 0 white inset, 0 -10px 0 0 white inset, 0 -20px 0 0 transparent inset
+      color $black
+      // text-shadow 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white, 2px -2px 0 white, 2px -1px 0 white, 2px 0 0 white, -2px -2px 0 white, -2px -1px 0 white, -2px 0 0 white, 1px -2px 0 white, 1px -1px 0 white, 1px 0 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0 0 white, 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white
+      transition all .3s ease-in-out
+
+      &:hover, &:focus
+        box-shadow 0 -1px 0 0 white inset, 0 -10px 0 0 white inset, 0 -20px 0 0 $color__catTwo inset
+
+  .urbana__news
+    display grid
+    grid-gap $gap__small
+    grid-template-columns repeat(4, 1fr)
+
+    .news
+      display flex
+      flex-flow column wrap
+
+      .news__img
+        margin-bottom 2vh
+
+      &:nth-child(1)
+        flex-flow row wrap
+        grid-column 1 / -1
+
+        .news__cat
+          width 100%
+
+        .news__title
+          padding-right $gap__small
+          text-align right
+
+        .news__title, .news__description
+          flex 1 0 0
+
+      &:nth-child(2)
+        grid-column 1 / 3
+
+      &:nth-child(3)
+        grid-column 3 / 5
+
+        .news__cat
+          order 1
+
+        .news__title
+          order 2
+
+        .news__description
+          order 3
+
+        .news__img
+          order 4
+
+.urbana--brief
+  display grid
+  grid-gap $gap__small
+  grid-template-columns repeat(4, 1fr)
+  margin-top $gap__big
+
+  header
+    grid-column 1 / -1
+
+    h1
+      &:before, &:after
+        background $color__catFour
+
+  .news
+    display flex
+    flex-flow column wrap
+
+    .news__img
+      margin-bottom 2vh
+
+    &:nth-child(odd)
+      .news__cat
+        order 1
+
+      .news__title
+        order 2
+
+      .news__img
+        order 3
+
+  .cat, .title, .description
+    a, p
+      &::selection
+        background $color__catFour
+        color white
+        text-shadow none
+
+  .cat
+    a
+      box-shadow 0 -1px 0 0 white inset, 0 -2px 0 0 white inset, 0 -4px 0 0 transparent inset
+      color $black
+      // text-shadow 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white, 2px -2px 0 white, 2px -1px 0 white, 2px 0 0 white, -2px -2px 0 white, -2px -1px 0 white, -2px 0 0 white, 1px -2px 0 white, 1px -1px 0 white, 1px 0 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0 0 white, 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white
+      transition all .3s ease-in-out
+
+      &:hover, &:focus
+        box-shadow 0 -1px 0 0 white inset, 0 -2px 0 0 white inset, 0 -5px 0 0 $color__catFour inset
+
+  .title
+    a
+      box-shadow 0 -1px 0 0 white inset, 0 -10px 0 0 white inset, 0 -20px 0 0 transparent inset
+      color $black
+      // text-shadow 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white, 2px -2px 0 white, 2px -1px 0 white, 2px 0 0 white, -2px -2px 0 white, -2px -1px 0 white, -2px 0 0 white, 1px -2px 0 white, 1px -1px 0 white, 1px 0 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0 0 white, 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white
+      transition all .3s ease-in-out
+
+      &:hover, &:focus
+        box-shadow 0 -1px 0 0 white inset, 0 -10px 0 0 white inset, 0 -20px 0 0 $color__catFour inset
+
+.varied
+  display grid
+  grid-column-gap $gap__big
+  grid-row-gap $gap__small
+  grid-template-columns 30vw repeat(3, 1fr)
+
+.pepsi-chart
+  grid-row 1 / 4
+  // background $pepsi__chart__blue
+  overflow hidden
+  padding 0
+
+  header
+    h1
+      &:before, &:after
+        background $pepsi__chart__blue
+
+  ul
+    display flex
+    flex-direction column
+    flex-wrap wrap
+    height auto
+    width 100%
+
+    li
+      // border-bottom 1px solid rgba($black, 20%)
+      // border-width 1px 0
+      color $black
+      display flex
+      font-family 'Rubik', sans-serif
+      height 5rem
+      margin 0
+      margin-bottom 1rem
+      opacity 1
+      overflow hidden
+      position relative
+      transition all .3s ease-in-out
+      width 100%
+
+      &.queda, &.baja, &.sube
+        &:before
+          content ''
+          position absolute
+          right 0
+          top 50%
+
+      &.baja, &.sube
+        &:before
+          border-left .4rem solid transparent
+          border-right .4rem solid transparent
+          height 0
+          width 0
+
+      &.queda
+        &:before
+          border-bottom .4rem solid transparent
+          border-right .7rem solid rgba($black, 50%)
+          border-top .4rem solid transparent
+          height 0
+          width 0
+
+      &.baja
+        &:before
+          border-top .7rem solid $pepsi__chart__red
+
+      &.sube
+        &:before
+          border-bottom .7rem solid $pepsi__chart__blue
+
+      .cover
+        // height 5rem
+        margin-right 1.5rem
+        order 1
+        width 5rem
+
+        img
+          // border-radius 5%
+          // box-shadow 0 5px 8px rgba(0, 0, 0, .5)
+          height auto
+          // object-fit cover
+          // transform translateY(0) translateZ(0)
+          // transition all .3s ease-in-out
+          width 100%
+
+      .top
+        align-self center
+        color $pepsi__chart__red
+        font-family 'candal', sans-serif
+        font-size 3em
+        margin-right 2rem
+        order 2
+        text-align center
+        width 10%
+
+      .album--info
+        align-self center
+        font-size .9em
+        order 3
+        text-transform uppercase
+
+        .band
+          font-weight 700
+
+        .song
+          text-transform capitalize
+
+.efemerides
+  grid-column 2 / 5
+  grid-row 1 / 2
+  position relative
+
+  header
+    h1
+      &:before, &:after
+        background $color__catThree
+
+  .efem__img
+    height auto
+    position relative
+    width 100%
+
+    &:before
+      background $color__catTwo
+      content ''
+      height 6rem
+      position absolute
+      right 2rem
+      top -1rem
+      width 3rem
+
+    img
+      height auto
+      width 100%
+
+  .efem__title
+    background $white
+    font-size 2.5em
+    left 0
+    padding 1rem 1rem 1rem 3rem
+    position absolute
+    top 45%
+    z-index 100
+
+    &:before
+      background $color__catThree
+      bottom 1.5rem
+      content ''
+      height .3rem
+      left 40%
+      position absolute
+      width 15rem
+      z-index -2
+
+  .efem__description
+    line-height 1.5
+    padding 3rem 0 0 40%
+
+    &:before
+      background $color__catOne
+      border-radius 50%
+      bottom -5%
+      content ''
+      height 10rem
+      position absolute
+      right 50%
+      width 10rem
+      z-index -10
+
+.tw
+  grid-column 2 / 5
+  grid-row 2 / 4
+
+  header
+    h1
+      &:before, &:after
+        background $color__twiter
+
+.ig
+  grid-column 1 / -1
+
+  header
+    h1
+      &:before, &:after
+        background $color__instagram

@@ -1,0 +1,51 @@
+footer
+  margin 8rem auto
+
+  .block
+    align-items center
+    display flex
+    flex-flow column wrap
+    font-size .9em
+    margin 0 auto
+    padding 0
+
+    p
+      order 2
+
+    ul
+      display flex
+      flex-flow row wrap
+      margin-bottom 1rem
+      order 1
+
+      li
+        margin-right 1rem
+
+        a
+          font-family 'candal', sans-serif
+          font-size 1.5em
+          letter-spacing .02em
+          opacity 1
+          text-transform uppercase
+          transition all .3s ease-in-out
+
+          &:hover
+            opacity .8
+
+          &:focus
+            letter-spacing .04em
+
+        &:nth-child(1)
+          a
+            color $color__twitter
+
+        &:nth-child(2)
+          a
+            color $color__facebook
+
+        &:nth-child(3)
+          a
+            color $color__instagram
+
+        &:last-child
+          margin 0

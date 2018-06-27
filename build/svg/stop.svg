@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 122 122" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>stop</title>
+<desc>Created using Figma</desc>
+<g transform="translate(-110 649)">
+<use transform="translate(146 -613)" fill="#655" xlink:href="#c"/>
+<mask id="d">
+<use transform="translate(110 -649)" fill="#655" xlink:href="#b"/>
+</mask>
+<g mask="url(#d)">
+<use transform="translate(110 -649)" fill="#655" xlink:href="#a"/>
+</g>
+</g>
+<defs>
+<path id="c" d="m0 0h50v50h-50v-50z"/>
+<path id="b" d="m122 61c0 33.689-27.311 61-61 61s-61-27.311-61-61 27.311-61 61-61 61 27.311 61 61z"/>
+<path id="a" d="m114 61c0 29.271-23.729 53-53 53v16c38.108 0 69-30.892 69-69h-16zm-53 53c-29.271 0-53-23.729-53-53h-16c0 38.108 30.892 69 69 69v-16zm-53-53c0-29.271 23.729-53 53-53v-16c-38.108 0-69 30.892-69 69h16zm53-53c29.271 0 53 23.729 53 53h16c0-38.108-30.892-69-69-69v16z"/>
+</defs>
+</svg>

@@ -1,0 +1,161 @@
+::selection
+  background $selection
+
+*, *:before, *:after
+  box-sizing border-box
+
+img
+  width 100%
+
+.block
+  margin 0 auto $gap__big
+  padding 0
+  width 95vw
+  z-index 100
+
+  @media (min-width: $bp-xl)
+    width 80vw
+
+.full
+  height auto
+  margin-bottom $gap__big
+  // padding $gap__big 0
+  width 100%
+
+  .block
+    margin-bottom 0
+
+.full, .block
+  header
+    align-items center
+    display flex
+    justify-content center
+    margin 0
+    padding 0
+
+    h1
+      align-content center
+      display flex
+      font-size 1.5em
+      justify-content center
+      letter-spacing .01em
+      margin 0 0 $gap__small
+      padding 0
+      position relative
+      z-index 10
+
+      &:before
+        background $color__catTwo
+        content ''
+        height .2em
+        margin 0 auto
+        position absolute
+        top 45%
+        width 150%
+        z-index -5
+
+.ads, .ads--side
+  align-items center
+  background rgba($black, 5%)
+  color rgba($black, 35%)
+  display flex
+  justify-content center
+  letter-spacing .35em
+
+.ads--side
+  height 45vh
+  position sticky
+  right 0
+  top 0
+  width 100%
+
+.ads
+  height 20vh
+  margin 10vh auto
+  width 60%
+
+.article
+  transition all .3s
+
+.block__overlay
+  position relative
+
+.block__img--responsive
+  box-shadow inset 0 0 80px rgba(0, 0, 0, .4)
+  overflow hidden
+
+.block__img
+  overflow hidden
+  width 100%
+
+  img
+    object-fit cover
+    width 100%
+
+.block__overlay--link
+  background transparent
+  bottom 0
+  left 0
+  overflow hidden
+  position absolute
+  right 0
+  text-indent 200%
+  top 0
+  visibility visible
+  white-space nowrap
+  z-index 10
+
+.block__overlay--link:hover ~ * .block__title, .block__title:hover
+  transition .35s ease-in-out
+
+.block__overlay--link:hover ~ * p
+  opacity .8
+
+.cat
+  font-size .5em
+  letter-spacing .3em
+  margin-bottom 1rem
+  text-transform uppercase
+
+.title
+  font-size 1.6em
+  margin 0 0 .5rem
+
+.description
+  font-size 1em
+  line-height 1.6
+  margin-bottom 1rem
+
+.cat, .title, .description
+  a, p
+    &::selection
+      background $color__catOne
+      color white
+      text-shadow none
+
+.cat
+  a
+    box-shadow 0 -1px 0 0 white inset, 0 -2px 0 0 white inset, 0 -4px 0 0 transparent inset
+    color $black
+    // text-shadow 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white, 2px -2px 0 white, 2px -1px 0 white, 2px 0 0 white, -2px -2px 0 white, -2px -1px 0 white, -2px 0 0 white, 1px -2px 0 white, 1px -1px 0 white, 1px 0 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0 0 white, 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white
+    transition all .3s ease-in-out
+
+    &:hover, &:focus
+      box-shadow 0 -1px 0 0 white inset, 0 -2px 0 0 white inset, 0 -5px 0 0 $color__catOne inset
+
+.title
+  a
+    box-shadow 0 -1px 0 0 white inset, 0 -10px 0 0 white inset, 0 -20px 0 0 transparent inset
+    color $black
+    // text-shadow 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white, 2px -2px 0 white, 2px -1px 0 white, 2px 0 0 white, -2px -2px 0 white, -2px -1px 0 white, -2px 0 0 white, 1px -2px 0 white, 1px -1px 0 white, 1px 0 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0 0 white, 0 -2px 0 white, 0 -1px 0 white, 0 0 0 white
+    transition all .3s ease-in-out
+
+    &:hover, &:focus
+      box-shadow 0 -1px 0 0 white inset, 0 -10px 0 0 white inset, 0 -20px 0 0 $color__catOne inset
+
+.img
+  transform translateY(0) translateZ(0)
+  transition all .3s ease-in-out
+
+  &:hover, &:focus
+    transform translateY(-10px) translateZ(0)

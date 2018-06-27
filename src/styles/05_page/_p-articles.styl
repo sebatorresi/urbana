@@ -1,0 +1,347 @@
+// .page__back-in-time,
+// .page__b-side,
+// .page__contacto,
+// .page__media,
+// .page__notas,
+// .page__programas
+//   &::before
+//     content: ""
+//     position: absolute
+//     top: 1.6rem
+//
+//     @media (min-width: $bp-xl)
+//       top: 13rem
+//
+//   &::after
+//     content: ""
+//     position: absolute
+//     top: 2.4rem
+//
+//     @media (min-width: $bp-xl)
+//       top: 20rem
+//
+// .top__page--pages
+//   display: block
+//
+//   h1
+//     display: none
+//
+//     @media (min-width: $bp-xl)
+//       display: flex
+//       justify-content: center
+//       font-size: 10em
+//       position: absolute
+//       text-align: center
+//       top: 10rem
+//       user-select: none
+//       width: 100%
+//       z-index: -50
+//
+//     @media (min-width: $bp-xl-3)
+//       margin: -3rem 0 0
+//
+// #entries__pages
+//   -ms-grid-gap: 0
+//   grid-row-gap: 0
+//   margin-bottom: 5rem
+//
+//   @media (min-width: $bp-xl)
+//     display: -ms-grid
+//     display: grid
+//     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr
+//     grid-template-columns: repeat(5, 11rem)
+//     -ms-grid-rows: 1fr 1fr 1fr
+//     grid-template-rows: repeat(3, auto)
+//     -ms-grid-gap: 2rem
+//     grid-row-gap: 2rem
+//     grid-auto-rows: auto
+//     justify-content: center
+//     margin: 4rem 0 8rem
+//     padding: 0
+//
+//   @media (min-width: $bp-xl-3)
+//     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr
+//     grid-template-columns: repeat(5, 14rem)
+//
+//   .pages__art
+//     @media (min-width: $bp-xl)
+//       &:nth-child(1)
+//         -ms-grid-column: 1
+//         -ms-grid-column-span: 2
+//         -ms-grid-row: 1
+//         grid-column: 1 / span 2
+//         margin-top: 10rem
+//
+//         img
+//           height: 45vh
+//
+//       &:nth-child(2)
+//         -ms-grid-column: 4
+//         -ms-grid-column-span: 2
+//         -ms-grid-row: 1
+//         grid-column: 4 / span 2
+//
+//         img
+//           height: 65vh
+//
+//       &:nth-child(3)
+//         -ms-grid-column: 2
+//         -ms-grid-column-span: 4
+//         -ms-grid-row: 2
+//         grid-column: 2 / span 4
+//
+//         img
+//           height: 65vh
+//
+//         p
+//           display: none
+//
+//         h2
+//           margin: -5.5rem 0 0 -15rem
+//           text-align: right
+//           font-size: 3.7em
+//           width: 80%
+//
+//       &:nth-child(4)
+//         -ms-grid-column: 1
+//         -ms-grid-column-span:2
+//         -ms-grid-row: 3
+//         grid-column: 1 / span 2
+//
+//         img
+//           height: 65vh
+//
+//       &:nth-child(5)
+//         -ms-grid-column: 4
+//         -ms-grid-column-span: 2
+//         -ms-grid-row: 3
+//         grid-column: 4 / span 2
+//         margin-top: 10rem
+//
+//         img
+//           height: 45vh
+//
+//   img
+//     width: 100%
+//     color: #444
+//     object-fit: cover
+//     object-position: center
+//
+//   .pages__art
+//     margin-bottom: 2rem
+//
+//     @media (min-width: $bp-xl)
+//       padding-top: 5rem
+//     a
+//       display: block
+//       h2, p
+//           padding: 0 .8rem
+//
+//           @media (min-width: $bp-xl)
+//             padding: 0 3rem
+//
+//       h2
+//         margin: .5rem 0 0
+//         @media (min-width: $bp-xl)
+//           font-size: 2em
+//           line-height: 1.1
+//           margin: 2rem 0 .5rem
+//       p
+//         font-size: 1em
+//         line-height: 1.5
+//         color: lightness($just__black, 40%)
+//         &:focus,
+//         &:visited,
+//         &:hover
+//           color: lightness($just__black, 40%)
+//           margin: .5rem 0 0
+//
+//         @media (min-width: $bp-xl)
+//           margin: inherit
+//
+// .pagination
+//   height: 100%
+//   padding: 0
+//   display: flex
+//   flex-flow: nowrap
+//   align-items: center
+//   justify-content: center
+//   &.wrapper
+//     margin: 2rem auto 8rem
+//
+//   a
+//     color: $bg__color--footer
+//     font-weight: 700
+//     font-size: .8em
+//
+//     @media (min-width: $bp-xl)
+//
+//       font-size: 1.2em
+//
+//   .back
+//     a
+//       margin-right: 1rem
+//       background: url(/svg/back.svg) no-repeat
+//       padding: 1rem 0 1rem 4rem
+//       background-position: left 0 top 5px
+//   .next
+//     a
+//       margin-left: 1rem
+//       background: url(/svg/next.svg) no-repeat
+//       padding: 1rem 4rem 1rem 0
+//       background-position: right 0 top 5px
+//
+// .main__article
+//   display: flex
+//   flex-direction: column
+//   flex-wrap: nowrap
+//   position: relative
+//
+//   img
+//     object-fit: cover
+//     width: 100%
+//
+//     @media (min-width: $bp-xl)
+//       object-position: 0 0
+//
+//   .main__article--header
+//     @media (min-width: $bp-xl)
+//       margin: 2rem 0
+//       padding: 0
+//
+//     img
+//       height: auto
+//       // margin-left: -10%
+//       width: 100%
+//       z-index: -1
+//
+//       @media (min-width: $bp-xl)
+//         height: 85vh
+//         width: 75vw
+//
+//     h1
+//       display: block
+//       margin: -5rem 0 0
+//       position: inherit
+//       text-align: right
+//       width: auto
+//       z-index: 1
+//
+//       @media (min-width: $bp-xl)
+//         font-size: 4em
+//         padding: 0 10% 0 25%
+//
+//   .content,
+//   .social,
+//   .similar
+//     display: flex
+//     flex-direction: column
+//     margin: 1rem auto
+//     padding: 0 2rem
+//
+//     @media (min-width: $bp-xl)
+//       margin: 2rem auto
+//       padding: 0
+//       width: 920px
+//
+//   .content
+//     p, h2
+//       padding: 0
+//
+//       @media (min-width: $bp-xl)
+//         padding-right: 35%
+//         margin: 0
+//     p
+//       font-size: 1.1em
+//       line-height: 1.5
+//       color: lightness($just__black, 40%)
+//       margin-bottom: 1.5rem
+//
+//       &:nth-child(1)
+//         font-weight: 700
+//         margin-bottom: 1rem
+//         color: $bg__color--footer
+//     h2
+//       @media (min-width: $bp-xl)
+//         font-size: 2.3em
+//         margin: 1.5rem 0
+//
+//     img
+//       margin: 1.5rem 0
+//       width: 100%
+//       height: auto
+//
+//     a
+//       color: $nav__color
+//       &:hover,
+//       &:focus
+//         color: $player__color--playing
+//       &:visited
+//         color: $player__color--playing
+//
+//   //GALERIA
+//
+//   .gallery
+//     align-content: flex-start
+//     display: flex
+//     flex-flow: row wrap
+//     justify-content: space-around
+//
+//     figure
+//       margin: 0
+//       padding: 0
+//
+//   .social
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     flex-direction: row
+//     border: 1px solid lightness($just__black, 85%)
+//     border-width: 1px 0
+//     margin: 0 auto
+//     padding: 1rem 0
+//
+//     a
+//       display: block
+//
+//     p
+//       margin-right: 1rem
+//       text-transform: uppercase
+//       font-weight: 700
+//       color: rgba($just__black, .7)
+//
+//     ul
+//       display: flex
+//       li
+//         margin-right: 1rem
+//         padding: 0
+//         &:last-child
+//           margin: 0
+//
+//     svg
+//       width: 3rem
+//
+//   .similar
+//     display: flex
+//     justify-content: space-between
+//     flex-flow: row wrap
+//
+//     h3
+//       flex: 100%
+//       margin-bottom: 2rem
+//
+//     .article
+//       flex: 1 1 0
+//       margin-right: 2rem
+//       &:last-child
+//         margin: 0
+//
+//     h3
+//       text-align: center
+//       text-transform: uppercase
+//       font-weight: 400
+//       letter-spacing: 8px
+//
+//     h4
+//       font-size: responsive .8em 1.2em
+//       margin-top: .5rem

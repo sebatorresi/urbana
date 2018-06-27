@@ -1,0 +1,219 @@
+#nav
+
+  .handle
+    color: $brand__color
+    cursor: pointer
+    flex: 1
+    font-size: .6em
+    font-weight: 700
+    letter-spacing: 5px
+    padding: 1rem
+    text-transform: uppercase
+    text-align: right
+
+    @media (min-width: $bp-xl)
+      display: none
+
+  #menu
+    align-items: center
+    display: flex
+    height: 0
+    max-height: auto
+    opacity: 0
+    overflow: hidden
+    // position: relative
+    transition: height .3s cubic-bezier(.165, .84, .44, 1)
+
+    &.toggle
+      height: auto
+      max-height: 100%
+      opacity: 1
+
+    @media (min-width: $bp-xl)
+      height: auto
+      max-height: auto
+      opacity: 1
+
+    a
+      color: $black
+      font-size: .95em
+      font-weight: 700
+      text-transform: capitalize
+      transition: all .4s ease-out
+
+    a:hover,
+    a:focus
+      color: lightness($color__catOne, 65%)
+
+    li
+      margin-right: 2rem
+
+      &:last-child
+        margin-right: 0
+
+    .search
+      margin-left: 2rem
+
+      input
+        border: 1px solid lightness($brand__color, 80%)
+        border-radius: 10px
+        padding: .7rem
+
+
+
+// #top
+//   a
+//     text-transform: lowercase
+//
+//   @media (min-width: $bp-xl)
+//     position: relative
+//
+// #logo
+//   svg
+//     fill: $color__claim
+//     width: 3.5rem
+//
+//     @media (min-width: $bp-xl)
+//       width: 5rem
+//
+// #nav
+//   align-items: flex-start
+//   display: flex
+//   flex-flow: row wrap
+//   height: auto
+//   justify-content: flex-start
+//
+//   a:hover,
+//   a:focus
+//     color: lightness($color__catOne, 65%)
+//
+//   .handle
+//     color: $nav__color
+//     cursor: pointer
+//     flex: 1
+//     font-size: .6em
+//     font-weight: 700
+//     letter-spacing: 5px
+//     padding: 1rem
+//     text-transform: uppercase
+//     text-align: right
+//
+//     @media (min-width: $bp-xl)
+//       display: none
+//
+//   ul
+//     align-content: top
+//     display: flex
+//     flex: 100%
+//     flex-flow: row wrap
+//     height: 0
+//     justify-content: flex-start
+//     max-height: auto
+//     opacity: 0
+//     overflow: hidden
+//     position: relative
+//     transition: height .3s cubic-bezier(.165, .84, .44, 1)
+//
+//     &.toggle
+//       height: auto
+//       max-height: 100%
+//       opacity: 1
+//
+//     @media (min-width: $bp-xl)
+//       flex: auto
+//       flex-flow: nowrap
+//       height: auto
+//       max-height: auto
+//       opacity: 1
+//
+//     li
+//       align-self: center
+//       border-bottom: 1px solid rgba($nav__color, .2)
+//       flex: 0 1 100%
+//       text-align: right
+//
+//       @media (min-width: $bp-xl)
+//         border-bottom: none
+//         flex: none
+//         margin-left: 1rem
+//
+//         &:first-child
+//           margin: 0
+//
+//       a
+//         display: block
+//         font-size: .85em
+//         font-weight: 700
+//         padding: .5rem
+//         transition: all .4s ease-out
+//
+// #navigation
+//   a
+//
+//
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $current__color--home
+//
+// .page__notas,
+// .page__notas--inner,
+// .current-post-parent
+//   a
+//       color: $nav__color
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $color__catOne
+//
+// .page__b-side,
+// .page__b-side--inner
+//   a
+//     color: $nav__color
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $color__catTwo
+//
+// .page__back-in-time,
+// .page__back-in-time--inner
+//   a
+//     color: $nav__color
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $color__catThree
+//
+// .page__media,
+// .page__media--inner
+//   a
+//     color: $nav__color
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $color__catFour
+//
+// .page__programas,
+// .page__programas--inner
+//   a
+//     color: $nav__color
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $bg__color--programas
+//
+// .page__contacto,
+// .page__contacto--inner
+//   a
+//     color: $nav__color
+//   #nav__home--current,
+//   .current-menu-item,
+//   .current-post-parent
+//     a
+//       color: $bg__color--contacto

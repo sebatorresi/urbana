@@ -1,0 +1,49 @@
+// BEM - BLOCL > ELEMENT > MODIFIER
+// .bloque {}
+// .bloque__elemento {}
+// .bloque--modificador {}
+// -------- .red-social {...}
+// -------- .red-social__li {...}
+// -------- .red-social--twitter {...}
+// <ul class="menu">
+//    <li class="menu__item menu__item--activo"> Inicio </li>
+//    <li class="menu__item"> Quienes Somos </li>
+//    <li class="menu__item"> Portafolio </li>
+//    <li class="menu__item"> Noticias </li>
+//    <li class="menu__item"> Contacto </li>
+// </ul>
+
+
+// -------- BASE --------
+@import '00_base/_breakponts'
+@import '00_base/_normalize'
+@import '00_base/_typography'
+@import '00_base/_variables'
+
+// -------- ATOM --------
+// basic HTML elements, buttons, labels, and input fields, that provide the smallest units of a web page.
+@import '01_atom/_a-buttons'
+@import '01_atom/_a-eventos'
+@import '01_atom/_a-list'
+@import '01_atom/_a-hamburger'
+
+// -------- ORGANISM --------
+// Organisms are composed of a group of molecules, atoms (and sometimes other organisms). In web design, organisms are more complex UI components that represent definitive sections of the page, such as a header, a footer, or a sidebar.
+@import '03_organism/_o-audiobar'
+@import '03_organism/_o-header'
+@import '03_organism/_o-nav'
+@import '03_organism/_o-player'
+@import '03_organism/_o-slider'
+@import '03_organism/_o-categories'
+@import '03_organism/_o-footer'
+@import '03_organism/_o-general'
+
+// Pages are the “specific instances of templates”. In the page stage, templates get populated with real content (copy, microcopy, images, videos, etc.), just as they will appear in the real UI.
+@import '05_page/_p-articles'
+@import '05_page/_p-back'
+@import '05_page/_p-bside'
+@import '05_page/_p-contacto'
+@import '05_page/_p-home'
+@import '05_page/_p-media'
+@import '05_page/_p-notas'
+@import '05_page/_p-programa'

@@ -1,0 +1,117 @@
+#slider
+	display block
+	height auto
+	margin 0 auto $gap__big
+	max-width 100%
+	position relative
+	transition all .3s cubic-bezier(.165, .84, .44, 1)
+	width 95vw
+
+	@media (min-width: $bp-xl)
+		height 80vh
+
+	&.slider__evento
+		display grid
+		grid-column-gap 5vh
+		grid-template-columns 1fr 1fr
+
+		.slider__state, .slider__evento
+			grid-column 1 / -1
+
+		.slider__evento
+			grid-row 1
+
+		@media (min-width: $bp-xl)
+			grid-template-columns 70% 30%
+
+			.slider__state, .slider__evento
+				grid-column inherit
+
+			.slider__evento
+				grid-row inherit
+
+	&.slider__full
+		display block
+
+	.slider__state
+		height auto
+		width 100%
+
+		@media (min-width: $bp-xl)
+			height 80vh
+
+		.item
+			height auto
+			width 100%
+
+			@media (min-width: $bp-xl)
+				height 80vh
+
+			a
+				box-sizing border-box
+				color $black
+				display grid
+
+				@media (min-width: $bp-xl)
+					grid-template-columns 40% 60%
+
+			.slider__img
+				grid-row 1
+
+				@media (min-width: $bp-xl)
+					grid-row inherit
+
+				img
+					height 30vh
+					object-fit cover
+					object-position top center
+					width 100%
+
+					@media (min-width: $bp-xl)
+						height 80vh
+
+			.slider__info
+				align-items center
+				display flex
+				flex-flow column wrap
+				justify-content center
+				padding 2.5vh 5vh 0
+
+				@media (min-width: $bp-xl)
+					height 80vh
+
+				h1
+					margin 2.5vh 0
+					padding 0
+					text-align center
+					// text-transform uppercase
+
+	.slider__evento
+		&.hide
+			display none
+			visibility hidden
+
+		&.show
+			align-items center
+			display flex
+			flex-flow column wrap
+			height auto
+			justify-content center
+			overflow hidden
+			visibility visible
+
+			@media (min-width: $bp-xl)
+				height 80vh
+
+			.evento__show--overlay
+				background transparent
+				bottom 0
+				left 0
+				overflow hidden
+				position absolute
+				right 0
+				text-indent 200%
+				top 0
+				visibility visible
+				white-space nowrap
+				z-index 10
